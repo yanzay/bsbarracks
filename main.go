@@ -72,7 +72,7 @@ func main() {
 		fmt.Println(up)
 		totalDuration += up.Duration
 	}
-	fmt.Printf("Total duration: %s\n", totalDuration)
+	fmt.Printf("Total duration: %s (%d days)\n", totalDuration, totalDuration/(24*time.Hour))
 }
 
 func (s *State) apply(up *Upgrade) {
